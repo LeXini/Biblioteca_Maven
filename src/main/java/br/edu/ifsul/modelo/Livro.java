@@ -49,17 +49,17 @@ public class Livro extends LivroBasico implements Serializable {
     
     @NotNull(message = "O idioma deve ser informado")
     @ManyToOne
-    @JoinColumn(name = "idioma", referencedColumnName = "id", nullable = false) 
+    @JoinColumn(name = "idioma", referencedColumnName = "id") 
     private Idioma idioma;
     
     @NotNull(message = "O formato deve ser informado")
     @ManyToOne
-    @JoinColumn(name = "formato", referencedColumnName = "id", nullable = false) 
+    @JoinColumn(name = "formato", referencedColumnName = "id") 
     private Formato formato;
     
     @NotNull(message = "O catalogo deve ser informado")
     @ManyToOne
-    @JoinColumn(name = "catalogo", referencedColumnName = "id", nullable = false) 
+    @JoinColumn(name = "catalogo", referencedColumnName = "id") 
     private Catalogo catalogo;
 
     public Livro() {
