@@ -40,7 +40,6 @@ public class Livraria implements Serializable {
     @Column(name = "nome", nullable = false, length = 50) 
     private String nome;
     
-    @NotBlank(message = "O site não pode ser em branco")
     @Length(max = 50, message = "O site não pode ter mais que {max} caracteres")
     @Column(name = "site", nullable = false, length = 50) 
     private String site;
